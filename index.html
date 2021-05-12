@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type='text/css' href="index.css">
+   <title>TextEditor</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class='all-ui-wrapper'>
+         <header>
+            <h1>TextEditor</h1>
+         </header>
+         <div class='ui-wrapper'>
+            <button class='ui-buttons' id='bold'>Bold</button>
+            <button class='ui-buttons' id='italic'>Italic</button>
+            <button class='ui-buttons' id='list'>Unordered List</button>
+            <button class='ui-buttons' id='save'>Save</button>
+            <button class='ui-buttons' id='load'>Load</button>
+         </div>
+      </div>
+      <div class="textEditor">
+         <div contenteditable="true" class="textEditor-textarea" id="text"></div>
+      </div>
+   </div>
+   <script src="index.js" type='module'></script>
+</body>
+
+</html>

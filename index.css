@@ -1,0 +1,94 @@
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+:root{
+   --myBlue: #0a6ccf;
+   --myBlack: #40403F;
+   color: var(--myBlack);
+}
+
+h1 {
+   padding: 2vh;
+   font-size: 5vw;
+   text-align: center;
+}
+
+.wrapper {
+   margin: 5vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   overflow-y: hidden;
+}
+
+.ui-wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+
+.ui-buttons {
+   position: relative;
+   flex: 1 1 20%;
+   font-size: 1.5vw;
+   margin: 10px;
+   padding: 10px 20px;
+   background-color: var(--myBlue);
+   border: none;
+   color: white;
+   cursor: pointer;
+   transition: .5s linear;
+}
+
+
+.textEditor {
+   margin-top: 5vh;
+   width: 90%;
+   height: 90vh;
+}
+
+.textEditor-textarea {
+   width: 100%;
+   min-height: 70vh;
+   padding: 5vh;
+   font-size: 20px;
+   white-space: pre-wrap;
+   border: 1px solid var(--myBlack);
+}
+
+.modal {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 1;
+   width: 25vw;
+   height: 25vh;
+   border: 2px solid var(--myBlack);
+   background-color: var(--myBlue);
+   color: white;
+   font-size: 20px;
+   border-radius: 20px;
+}
+
+.modal-button {
+   font-size: 3vh;
+   padding: 2vh 10vh;
+   background-color: white;
+   border: none;
+   color: var(--myBlue);
+   cursor: pointer;
+   transition: .5s linear;
+}
+.modal-button:hover,
+.ui-buttons:hover {
+   box-shadow: 5px 5px 5px 5px var(--myBlack)
+}
