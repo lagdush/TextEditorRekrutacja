@@ -5,15 +5,25 @@
    box-sizing: border-box;
 }
 :root{
-   --myBlue: #0a6ccf;
-   --myBlack: #40403F;
+   --mybgColor: #eee2dc;
+   --myBlack: #123c69;
    color: var(--myBlack);
+}
+
+body {
+   background-color: #edc7b7;
 }
 
 h1 {
    padding: 2vh;
-   font-size: 5vw;
+   font-size: 7vw;
    text-align: center;
+   color: transparent;
+   background: -webkit-linear-gradient(#ac3b61, #123c69);
+   background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent
+
 }
 
 .wrapper {
@@ -22,7 +32,6 @@ h1 {
    flex-direction: column;
    justify-content: space-between;
    align-items: center;
-   overflow-y: hidden;
 }
 
 .ui-wrapper {
@@ -37,9 +46,9 @@ h1 {
    font-size: 1.5vw;
    margin: 10px;
    padding: 10px 20px;
-   background-color: var(--myBlue);
+   background-color: var(--mybgColor);
    border: none;
-   color: white;
+   color: var(--myBlack);
    cursor: pointer;
    transition: .5s linear;
 }
@@ -53,11 +62,13 @@ h1 {
 
 .textEditor-textarea {
    width: 100%;
-   min-height: 70vh;
+   height:100%;
    padding: 5vh;
    font-size: 20px;
    white-space: pre-wrap;
-   border: 1px solid var(--myBlack);
+   border-radius: 10px;
+   background-color: white;
+   box-shadow: 9px 6px 11px 0px var(--myBlack)
 }
 
 .modal {
@@ -70,11 +81,12 @@ h1 {
    left: 50%;
    transform: translate(-50%, -50%);
    z-index: 1;
-   width: 25vw;
-   height: 25vh;
+   min-width: 25vw;
+   min-height: 25vh;
+   padding: 20px;
    border: 2px solid var(--myBlack);
-   background-color: var(--myBlue);
-   color: white;
+   background-color: var(--mybgColor);
+   color: var(--myBlack);
    font-size: 20px;
    border-radius: 20px;
 }
@@ -82,13 +94,13 @@ h1 {
 .modal-button {
    font-size: 3vh;
    padding: 2vh 10vh;
-   background-color: white;
+   background-color: var(--myBlack);
    border: none;
-   color: var(--myBlue);
+   color: var(--mybgColor);
    cursor: pointer;
    transition: .5s linear;
 }
 .modal-button:hover,
 .ui-buttons:hover {
-   box-shadow: 5px 5px 5px 5px var(--myBlack)
+   box-shadow: 5px 6px 11px -1px var(--myBlack)
 }

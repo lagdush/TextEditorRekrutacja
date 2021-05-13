@@ -1,10 +1,11 @@
 const fs = require('fs');
-
+const homedir = require('os').homedir();
 exports.save = async (req, res) => {
   try {
     const data = req.body;
     const saveIt = JSON.stringify(data);
-    fs.writeFile('savedFile.json', saveIt, (error) => {
+
+    fs.writeFile(`${homedir}/Desktop/yourSavedFile.json`, saveIt, (error) => {
       console.log(error);
     });
     res.status(201).send({
