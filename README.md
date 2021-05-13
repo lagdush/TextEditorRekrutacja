@@ -6,6 +6,10 @@ A simple text editor that allows you to **save** your text to a json file. **Rea
 
 On the user's desktop.
 
+# It is possible to style only selected fragment of text?
+
+Yes, it's possible for bold and italic.
+
 # How to run?
 
 Type in the console npm _run start:dev_ and _npm run startServer_
